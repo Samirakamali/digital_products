@@ -11,7 +11,7 @@ class Category(models.Model):
     created_time = models.DateTimeField(_('created time'), auto_now_add=True)
     updated_time = models.DateTimeField(_('updated time'), auto_now=True)
 
-    class Meta:  # baraye ezafe kardan vizegihaye ezafeh
+    class Meta:  
         db_table = 'categories'  
         verbose_name = _('Category') 
         verbose_name_plural = _('Categories')
@@ -36,7 +36,7 @@ class File(models.Model):
     product = models.ForeignKey('Product', verbose_name=_('product'), blank=True, null=True, on_delete=models.CASCADE) 
     title = models.CharField(_('title'), max_length=50)
     description = models.TimeField(_('description'), blank=True)
-    file = models.FileField(_('file'), upload_to='files/%Y/%m/%d/') #taeen sal mah ruz
+    file = models.FileField(_('file'), upload_to='files/%Y/%m/%d/')
     is_enable = models.BooleanField(_('is enable'), default=True)
     created_time = models.DateTimeField(_('created time'), auto_now_add=True)
     updated_time = models.DateTimeField(_('updated time'), auto_now=True)
