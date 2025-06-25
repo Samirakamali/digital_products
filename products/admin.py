@@ -9,11 +9,9 @@ class categoryAdmin(admin.ModelAdmin):
     list_filter = ['is_enable', 'parent']
     search_fields = ['title']
 
-
-
 class FileInLineAdmin(admin.StackedInline):
     model = File
-    feilds = ['title','file', 'is_enable']
+    feilds = ['title','file_type', 'file','is_enable']
     extra = 0
 
 @admin.register(Product)
@@ -21,7 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ['title', 'is_enable', 'created_time']
     list_filter = ['is_enable']
     search_fields = ['title']
-    filter_horizontal = ['categories']
+    filter_horizontal = ['categories']  
     inlines = [FileInLineAdmin]
 
 
