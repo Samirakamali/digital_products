@@ -10,7 +10,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
-from .models import Gateway, Package, Payment, Subscription
+from .models import Gateway,  Payment 
+from subscriptions.models import Package, Subscription
 from .serializers import GatewaySerializer
 
 
