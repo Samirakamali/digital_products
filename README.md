@@ -12,3 +12,4 @@ They can also create subscription packages, link them to allowed gateways, and m
 User accounts can be viewed, edited, activated or deactivated, and provinces or regions can be managed for user data consistency.
 This clear structure makes it easy to handle an online store and subscription system from a single secure interface
 
+![1431e437-cc64-4c0a-b492-ebccfbb79fd5](https://github.com/user-attachments/assets/aad16c7e-404e-4653-b41c-282c39012512)
