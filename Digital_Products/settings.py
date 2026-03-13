@@ -18,7 +18,7 @@ from datetime import timedelta
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_y%^cpf9=#=mj#zp%60)vm24&#r5&^!m50v*4qx$%(p*)w)z*l'
+SECRET_KEY = 'dev-secret-key'
 
 # Application definition
 

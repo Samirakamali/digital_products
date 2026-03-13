@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
-from .models import Category, Product, File
+from .models import Category, Product, File 
 from .serializers import CategorySerializer, ProductSerializer, FileSerializer
 
 class ProductListView(APIView):
